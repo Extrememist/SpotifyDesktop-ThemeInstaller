@@ -31,11 +31,11 @@ done
 if [ ! -d "$themeDirectory" ]; then
 	echo "The specified theme does not exist!"
 	exit
-fi
+file
 
 if [ "$openSpotifyAfterInstall" == true ]; then
 	echo "Killing Spotify..."
-	killall Spotify 2> /dev/null
+	killall spotify 2> /dev/null
 fi
 
 echo "Installing $themeName..."
@@ -90,12 +90,15 @@ mkdir $tempDirectory
 	rm -rf $tempDirectory
 )
 
-echo "";
-echo "Theme installed!";
 
-if [ "$openSpotifyAfterInstall" == true ]; then
-	echo "";
-	echo "Launching Spotify..."
-	echo "";
-	open $spotifyApp
-fi
+### STOPS SPOTIFY OPENING AS ROOT AND IN GENERAL
+
+#echo "";
+#echo "Theme installed!";
+
+#if [ "$openSpotifyAfterInstall" == true ]; then
+#	echo "";
+#	echo "Launching Spotify..."
+#	echo "";
+#	open $spotifyApp
+#fi
