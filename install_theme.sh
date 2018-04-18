@@ -31,7 +31,7 @@ done
 if [ ! -d "$themeDirectory" ]; then
 	echo "The specified theme does not exist!"
 	exit
-file
+fi
 
 if [ "$openSpotifyAfterInstall" == true ]; then
 	echo "Killing Spotify..."
