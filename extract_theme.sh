@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-spotifyApp="/Applications/Spotify.app/"
-spotifyApps="$spotifyApp/Contents/Resources/Apps/"
+spotifyApp="/usr/share/spotify/"
+spotifyApps="$spotifyApp/Apps/"
 
 if [ $# -eq 0 ]
   then
